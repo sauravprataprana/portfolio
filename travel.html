@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Photo Gallery</title>
     <style>
         body{
             background-color: black;
@@ -12,62 +9,92 @@
         h1{
             color: wheat;
             text-align: center;
-            margin-top: 50px;
+            padding: 1em;
+            margin-top: -50px;
         }
-        p{
-            color: rgb(240, 26, 7);
-            text-align: justify;
+        /* Gallery container */
+        .gallery {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            
+        }
+
+        /* Gallery item */
+        .item {
+            width: 300px;
+            margin: 20px;
+            position: relative;
+            overflow:hidden;
+        }
+
+        /* Image */
+        .item img {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+
+        /* Hover effect */
+        .item:hover img {
+            transform: scale(1.2);
+           
+        }
+
+        /* Caption */
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            padding: 10px;
             text-align: center;
-            margin-left: 100px;
-            margin-right: 100px;
-           font-size: bold;
-           font-style: italic;
+            transition: all 0.5s ease;
+            opacity: 0;
         }
-            div{
-            margin-top: 100px;
-        }
-        
-    
 
-        img:hover {
-  transform: translate3d(10px,0px,20px);  
-  box-shadow:0px 0px 100px rgb(15, 15, 198);
- 
-  }
-img{
-    height: 400px;
-    padding: 1em;
-   margin-left: 80px;
-    
+        /* Show caption on hover */
+        .item:hover .caption {
+            opacity: 1;
+        }
+h2{
+    text-align: center;
+   
+    color: bisque;
+    margin-top: 60px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
-
-
-
-
-
-      
-        
+#saurav img{
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 150px;
+}
+       
     </style>
 </head>
 <body>
-    <div>
-        <p>Welcome to my travel page! Here, you'll find a collection of my coolest travel shots. </p>
-        <p>From stunning landscapes to candid moments, these photos are sure to make you laugh and inspire your next adventure.</p>
-        <p> So sit back, relax, and enjoy the journey!</p>
-    <h1>PICTURES</h1>
-  
-    <div >
-        
-    <img src="viber_image_2023-01-23_14-28-13-319.jpg" alt="">
-
-  
-    <img src="viber_image_2023-01-23_14-28-06-028.jpg" alt="">
-    <img  src="viber_image_2023-01-23_14-28-15-744.jpg" alt="">
-    <img  src="Screenshot_2021-10-25-16-35-21-237_com.miui.videoplayer.jpg" alt="">
-    <img  src="viber_image_2023-01-23_14-19-50-006.jpg" alt="">
-    <img src="PicsArt_04-22-06.45.56.png" alt="">
-</div>
-
-    
-</body>
+    <a id="saurav"href="personal.html"><img src="4dribble.gif" alt="funny GIF" width="100%"></video>
+    </a>
+    <h1>Travel Gallery</h1>
+    <div class="gallery">
+        <div class="item">
+            <img src="viber_image_2023-01-23_14-28-13-319.jpg"  alt="SHIVAPURI PEAK">
+            <div class="caption">SHIVPURI PEAK</div>
+        </div>
+        <div class="item">
+            <img src="viber_image_2023-01-23_14-28-15-744.jpg"  alt="MAILUNG">
+            <div class="caption">MAILUNG</div>
+        </div>
+        <div class="item">
+            <img src="Screenshot_2021-10-25-16-35-21-237_com.miui.videoplayer.jpg" alt="DHAMPUS">
+            <div class="caption">DHAMPUS</div>
+        </div>
+        <div class="item">
+            <img src="Screenshot_2022-12-30-17-52-41-827_com.miui.videoplayer.jpg" height="541px" alt="DHAMPUS">
+            <div class="caption">TREK</div>
+        </div>
+         <video src="20220710173826_MVI_2955.MP4" autoplay loop muted width="50%" ></video>
+         <h2>"Welcome to my travel gallery! Here you'll find proof that I've been to more places than just my couch.Traveling brings many benefits to our lives, both physically and mentally. It allows us to explore new cultures, experience new things, and learn about different ways of life. This can broaden our perspectives and help us to understand the world better. Additionally, travel can be a great way to relieve stress and improve our overall well-being.So come along for the ride and let's explore the world together, one pixel at a time."</h2>
+         </body>
 </html>
